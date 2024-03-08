@@ -1,0 +1,62 @@
+.spokes-container {
+  display: block;
+  position: absolute;
+  top: 15.5%;
+  left: 14.5%;
+  background: #fff;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: thin;
+  border-color: green;
+  margin: 0em;
+  overflow: hidden;
+
+  .line {
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    left: 50%;
+    top: 50%;
+    transform-origin: left center;
+    background: #000;
+    animation-name: fadeLines;
+    opacity: 0;
+    animation-fill-mode: both;
+
+    @for $i from 1 through 15 {
+      &:nth-child(#{$i}) {
+        $rotation: ($i - 1) * 24deg;
+        transform: rotate($rotation);
+        // Example calculation for animation duration and delay
+        // Adjust these formulas as needed for your specific animation pattern
+        animation-duration: 1s + ($i * 0.1s); // Example duration increase
+        animation-delay: 0.5s + ($i * 0.2s); // Example delay increase
+      }
+    }
+  }
+}
+
+@keyframes fadeLines {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

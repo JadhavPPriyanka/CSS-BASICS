@@ -1,0 +1,10 @@
+body {
+    font-size: 12px;
+ }
+
+ a {
+    color: teal;
+    &:hover{
+        text-decoration: underline;
+    }
+ }
