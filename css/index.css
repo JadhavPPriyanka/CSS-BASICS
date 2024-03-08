@@ -1,17 +1,33 @@
 body {
   font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 20px;
 }
 
 a {
   color: teal;
 }
-
 a:hover {
   text-decoration: underline;
 }
 
-a:visited{
-    color: blue;
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: teal;
+  transition: width 1s ease-in-out;
+  margin-left: 20px;
+}
+.box:hover {
+  width: 200px;
+}
+
+.box-model {
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  border: 2px solid green;
+  margin: 20px;
 }
 
 /*# sourceMappingURL=index.css.map */

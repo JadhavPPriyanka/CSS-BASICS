@@ -1,5 +1,7 @@
 body {
     font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
  }
 
  a {
@@ -8,3 +10,23 @@ body {
         text-decoration: underline;
     }
  }
+
+ .box {
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    transition: width 1s ease-in-out;
+    margin-left: 20px;
+
+    &:hover {
+        width: 200px;
+      }
+  }
+  
+.box-model{
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    border: 2px solid green;
+    margin: 20px;
+}
