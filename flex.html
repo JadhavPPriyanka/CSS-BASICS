@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px; 
+        /* // Adds space between boxes */
+      }
+      
+      .box {
+        flex: 1;
+        min-width: 200px;
+        height: 100px;
+        background-color: lightgrey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+      }
+      
+      /* // Breakpoint for screens between 991px and 768px */
+      @media (max-width: 991px) and (min-width: 768px) {
+        .container {
+          justify-content: space-between;
+        }
+        .box {
+          flex-basis: calc(50% - 20px); // Adjusts width to fit 2 boxes per row
+        }
+      }
+      
+      /* // Breakpoint for screens narrower than 767px */
+      @media (max-width: 767px) {
+        .box {
+          flex-basis: 100%; 
+          /* // Each box takes full container width */
+        }
+      }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+      </div>
+      
+</body>
+</html>
