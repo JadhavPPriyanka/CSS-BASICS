@@ -13,6 +13,11 @@ https://flexboxfroggy.com/
 # Flexbox
 The layout is based on a flex container (the parent element) and flex items (the children).
 
+# Transition and animation
+div {
+  transition: [property] [duration] [timing-function] [delay];
+}
+
 # Box model
 width: Specifies the width of the content area.
 height: Specifies the height of the content area.
