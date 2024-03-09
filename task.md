@@ -11,7 +11,7 @@ https://github.com/JadhavPPriyanka/CSS-BASICS
 2. Take the reference of raweng site home page.
    https://www.raweng.com/
 
-Must have things
+## Must have things
 
 - Create basic version of webpage
 - Create simple transition for navigation items hover
@@ -22,7 +22,7 @@ Must have things
 - Open all casestudy section links in new tab
 - Make card blocks responsive
 
-Good to have
+## Good to have
 
 - Slider implementation
 - Use of scss(for animation task)
