@@ -1,0 +1,24 @@
+flex: 1; 
+gives each box the ability to grow if necessary, so they share the container space equally. 
+It's shorthand for 
+flex-grow: 1; 
+flex-shrink: 1; 
+flex-basis: 0%;.
+min-width: 200px; 
+ensures that the boxes don't shrink below a certain width, preserving the design integrity.
+
+
+Responsiveness with Media Queries
+Media queries adjust the flex container's and items' properties based on the viewport size, enhancing the layout's responsiveness.
+
+For screens between 991px and 768px:
+
+justify-content: space-between; ensures that the boxes are distributed with space between them, fully utilizing the container's width.
+flex-basis: calc(50% - 20px); 
+adjusts each box's base size to fit two per row, accounting for the gap.
+For screens narrower than 767px:
+
+flex-direction: column; 
+changes the layout direction to vertical, stacking the flex items.
+flex-basis: 100%; 
+makes each box take up the full container width, facilitating a single-column layout.
