@@ -1,0 +1,24 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    // For ESLint
+    "source.fixAll.eslint": true,
+    // For Stylelint
+    "source.fixAll.stylelint": true
+  },
+  // needed to allow eslint to validate files, if rule is not provided eslint might not be able to show errors in files.
+  "eslint.validate": ["javascript", "javascriptreact", "html"],
+  "cSpell.words": [
+    "Comms",
+    "GHUB",
+    "productfinder",
+    "productlocations",
+    "reachify",
+    "testid"
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.run": "onSave",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
